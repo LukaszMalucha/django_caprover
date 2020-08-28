@@ -13,7 +13,7 @@
       "USER admin",
       "EXPOSE 80",
       "COPY ./runserver.sh /usr/local/bin/",
-      "RUN chmod 755 runserver.sh",
+
       "CMD [\"sh\", \"runserver.sh\"]"
   ]
 
