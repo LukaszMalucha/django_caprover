@@ -10,7 +10,7 @@
       "WORKDIR /app",
       "RUN chown -R admin:admin /app",
       "RUN chmod 755 /app",
-      "USER admin"
+      "USER admin",
       "EXPOSE 80",
       "COPY ./runserver.sh /usr/local/bin/",
       "CMD [\"sh\", \"runserver.sh\"]"
