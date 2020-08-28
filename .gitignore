@@ -1,0 +1,13 @@
+*.pyc
+.~c9
+env.py
+__pycache__?
+venv/*
+.idea/*
+.env
+.settings.env
+
+# Elastic Beanstalk Files
+zz/*
+!zz/*.cfg.yml
+!zz/*.global.yml
