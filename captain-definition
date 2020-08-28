@@ -12,8 +12,8 @@
       "RUN chmod 755 /app",
       "USER admin",
       "EXPOSE 80",
-      "RUN chmod 777 ./runserver.sh",
       "COPY ./runserver.sh /usr/local/bin/",
+      "RUN chmod 777 ./runserver.sh",
       "CMD [\"sh\", \"runserver.sh\"]"
   ]
 
