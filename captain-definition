@@ -12,7 +12,7 @@
 
       "EXPOSE 80",
       "COPY ./runserver.sh /usr/local/bin/",
-      "CMD [\"python\", \"manage.py\", \"runserver \"]"
+      "CMD [\"python\", \"manage.py\", \"runserver\"]"
 
   ]
 
