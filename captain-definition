@@ -12,7 +12,8 @@
 
       "EXPOSE 80",
       "COPY ./runserver.sh /usr/local/bin/",
-      "CMD [\"python\", \"manage.py\", \"runserver\"]"
+      "CMD [\"python\", \"manage.py\", \"makesuper\"]",
+      "CMD [\"gunicorn\", \"django_caprover.wsgi\", \"--bind=0.0.0.0:80\"]"
 
   ]
 
